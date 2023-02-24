@@ -1,9 +1,4 @@
 <template>
-  <div class="flex flex-col justify-start items-center w-1/3">
-    <template v-for="result in results">
-      <Result :title="result.prenom + ' ' + result.nom" :description="result.metiers" :image="result.image" :slug="result.slug"/>
-    </template>
-  </div>
 </template>
 
 <script setup lang="ts">

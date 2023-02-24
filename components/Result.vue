@@ -3,7 +3,7 @@
 		<img :src="props.image" class="rounded-lg w-16 h-16 aspect-square object-cover object-top"/>
 		<div class="flex flex-col">
 			<h2 class="text-slate-900 text-xl font-bold">{{ props.title }}</h2>
-			<span class="text-slate-600">{{ props.description }}</span>
+				<span class="text-slate-600 overflow-hidden text-ellipsis inline-block">{{ props.description }}</span>
 		</div>
 	</NuxtLink>
 </template>
