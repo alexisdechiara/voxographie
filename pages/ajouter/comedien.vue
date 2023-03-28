@@ -5,14 +5,8 @@
 		</h2>
 		<div class="flex flex-col items-center gap-8 w-1/3 pb-16 font-nunito">
 			<div class="flex justify-between gap-16 w-full">
-				<div class="relative w-full">
-					<input type="text" id="prenom" v-model="prenom" class="form-input  font-semibold rounded-t-lg px-2.5 pb-2.5 pt-5 w-full text-sm placeholder-transparent text-gray-900 bg-neutral-100 border-0 rounded-lg dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-0 peer" placeholder="Prénom" required />
-					<label for="prenom" class="absolute  text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] left-2.5 peer-focus:text-neutral-600 peer-focus:dark:text-neutral-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 peer-placeholder-shown:cursor-text">Prénom*</label>
-				</div>
-				<div class="relative w-full">
-					<input type="text" id="nom" v-model="nom" class="form-input  font-semibold rounded-t-lg px-2.5 pb-2.5 pt-5 w-full text-sm placeholder-transparent text-gray-900 bg-neutral-100 border-0 rounded-lg dark:bg-gray-700 dark:text-white focus:outline-none focus:ring-0 peer" placeholder="Nom" required />
-					<label for="nom" class="absolute  text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] left-2.5 peer-focus:text-neutral-600 peer-focus:dark:text-neutral-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:cursor-text peer-focus:scale-75 peer-focus:-translate-y-4">Nom*</label>
-				</div>
+				<CustomInput v-model="prenom" label="Prénom" required />
+				<CustomInput v-model="nom" label="Nom" required />
 			</div>
 			<div class="flex items-center justify-center w-full">
 				<label for="image-url" class="overflow-hidden flex flex-row items-center justify-between w-full border-2 border-neutral-300 border-dashed rounded-lg cursor-pointer bg-neutral-50 transition-all duration-300 hover:brightness-95" :class="image !== null ? 'h-full' : 'h-64'">
