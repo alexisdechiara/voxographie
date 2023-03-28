@@ -9,13 +9,9 @@
 				<CustomInput v-model="nom" label="Nom" required />
 			</div>
 			<div class="flex items-center justify-center w-full">
-				<label for="image-url" class="overflow-hidden flex flex-row items-center justify-between w-full border-2 border-neutral-300 border-dashed rounded-lg cursor-pointer bg-neutral-50 transition-all duration-300 hover:brightness-95" :class="image !== null ? 'h-full' : 'h-64'">
+				<label for="image-url" class="group overflow-hidden flex flex-row items-center justify-between w-full border-2 border-neutral-300 border-dashed rounded-lg cursor-pointer bg-neutral-50 transition-all duration-300 hover:brightness-95" :class="image !== null ? 'h-full' : 'h-64'">
 					<div class="flex flex-col items-center justify-center pt-5 pb-6 px-4 w-full">
-						<svg class="w-10 h-10 mb-3 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-							<path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242"></path>
-							<path d="M12 12v9"></path>
-							<path d="m16 16-4-4-4 4"></path>
-						</svg>
+						<Icon name="lucide:upload-cloud" class="text-6xl text-neutral-500 group-hover:text-neutral-600 transition-colors duration-300" />
 						<p class="mb-2 text-sm text-neutral-600 text-center"><span class=" font-semibold">Ajouter une photo de profil</span> en cliquant ou par glisser-déposer</p>
 						<p class="text-xs text-neutral-600">PNG, JPG or WebP</p>
 					</div>
